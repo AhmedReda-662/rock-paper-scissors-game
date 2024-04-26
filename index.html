@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papper Scissors | Front-End Mentor Challenge</title>
+    <!-- Add Normalize Style ("Reset The Page Layout") -->
+    <link rel="stylesheet" href="./style/normalize.css">
+    <!-- Add Main Style -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="preload">
+    <div class="container">
+        <header>
+            <img src="./images/logo.svg" alt="Logo" class="logo">
+            <div class="score">
+                <div class="score-title">score</div>
+                <div class="score-number">0</div>
+            </div>
+        </header>
+        <section class="game">
+            <button class="choice-btn" data-choice = "paper">
+                <div class="choice paper">
+                    <img src="./images/icon-paper.svg" alt="paper">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice = "scissors">
+                <div class="choice scissors">
+                    <img src="./images/icon-scissors.svg" alt="scissors">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice = "rock">
+                <div class="choice rock">
+                    <img src="./images/icon-rock.svg" alt="rock">
+                </div>
+            </button>
+        </section>
+    </div>
+    <div class="results hidden">
+        <h2>you picked</h2>
+        <h2>the house picked</h2>
+        <div class="result"></div>
+        <div class="result-winner hidden">
+            <h3 class="results-text"></h3>
+            <button class="play-again">play again</button>
+        </div>
+        <div class="result"></div>
+    </div>
+    <button class="rules-btn">rules</button>
+    <div class="modal">
+        <div class="modal-container">
+            <header class="modal-header">
+                <h2>rules</h2>
+                <button class="close-btn">
+                    <img src="./images/icon-close.svg" alt="close-icon">
+                </button>
+            </header>
+            <img src="./images/image-rules.svg" alt="rules">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
